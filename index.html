@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>draw</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet"> <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="wrapper">
+	<header>
+		<h1>pixel teste</h1>
+		<p>moggar nub no habblet</p>
+	</header>
+	<div class="controls">
+		<label for="colorPicker">cores</label>
+		<input type="color" id="colorPicker">
+		<label for="cellSize">quadros</label>
+		<input type="range" min="10" max="60" id="columns" step="10" value="30">
+		<button data-undo>teste</button>
+		<button data-clear>lixo</button>
+		<button data-save>save</button>
+	</div>
+	<div class="canvas">
+		<div class="draw-area">
+			<div class="marker"></div>
+		</div>
+	</div>
+	<div class="css">
+		<label for="css">CSS:</label>
+		<textarea name="cssCode" id="css" rows="10"></textarea>
+		<button data-copy>code teste</button>
+	</div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/7.7.0/d3.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
